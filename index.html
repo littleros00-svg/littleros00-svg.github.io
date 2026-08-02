@@ -40,10 +40,18 @@ section {
     gap: 20px;
 }
 .card {
-    border: 1px solid #ddd;
-    padding: 25px;
+    border: 1px solid #eee;
+    padding: 20px;
     width: 280px;
     background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
 }
 .card img {
     width: 100%;

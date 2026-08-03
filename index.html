@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ليتل روز | ورد وهدايا</title>
-    
 
-  <style>
-.call-btn:hover {
-    background: #1da851;
-}
+<style>
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -18,20 +16,38 @@ body {
     color: #111;
 }
 
-.whatsapp-btn {
+.whatsapp-btn,
+.call-btn {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: #25D366;
     color: white;
     text-decoration: none;
     border-radius: 25px;
     font-size: 16px;
 }
 
+.whatsapp-btn {
+    background: #25D366;
+}
+
+.call-btn {
+    background: #000;
+    margin-right: 10px;
+}
+
+.whatsapp-btn:hover {
+    opacity: .8;
+}
+
+.call-btn:hover {
+    background: #333;
+}
+
+
 header {
     background: #000;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 50px 20px;
 }
@@ -45,410 +61,310 @@ header p {
     font-size: 20px;
 }
 
-section {
-    padding: 40px 20px;
-    text-align: center;
+
+.logo {
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    background:#fff;
+    padding:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+
+.banner {
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:20px;
+    margin-top:30px;
 }
 
-.card {
-    border: 1px solid #eeeeee;
-    padding: 20px;
-    width: 280px;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
-}
-
-.card img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img:hover {
-    transform: scale(1.05);
-}
-
-button {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 12px 30px;
-    cursor: pointer;
-    border-radius: 25px;
-}
-
-footer {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-</style>
-
-
-
-.call-btn:hover {
-    background: #1da851;
-}
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f7f5f0;
-    color: #111;
-}
-
-.whatsapp-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 16px;
-}
-
-header {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-header h1 {
-    font-size: 42px;
-    margin: 0;
-}
-
-header p {
-    font-size: 20px;
-}
 
 section {
-    padding: 40px 20px;
-    text-align: center;
+    padding:40px 20px;
+    text-align:center;
 }
+
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
 }
+
 
 .card {
-    border: 1px solid #eeeeee;
-    padding: 20px;
-    width: 280px;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
+    width:280px;
+    padding:20px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:.3s;
 }
 
-.card img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
 
 .card:hover {
-    transform: translateY(-5px);
+    transform:translateY(-5px);
 }
+
+
+.card img {
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
 
 .card img:hover {
-    transform: scale(1.05);
+    transform:scale(1.05);
 }
+
 
 button {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 12px 30px;
-    cursor: pointer;
-    border-radius: 25px;
+    background:#000;
+    color:#fff;
+    border:none;
+    padding:12px 30px;
+    cursor:pointer;
+    border-radius:25px;
 }
 
+
 footer {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:20px;
 }
 
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<img src="./logo.png" alt="Logo" style="width:160px;height:160px;border-radius:50%;background:#fff;padding:10px;box-shadow:0 5px 15px rgba(0,0,0,.2);">
+<img class="logo" src="./logo.png" alt="Little Rose">
+
 
 <h1>Little Rose</h1>
 
 <p>ورد وهدايا بتصميم فاخر للمناسبات</p>
 
-<p>ورد وهدايا ليتل روز | حيث يلتقي جمال الورد بفخامة الهدايا والحلويات</p>
+<p>
+ورد وهدايا ليتل روز | حيث يلتقي جمال الورد بفخامة الهدايا والحلويات
+</p>
 
-<div>
+
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
 💬 اطلب عبر الواتساب
 </a>
 
+
 <a class="call-btn" href="tel:0503172022">
 📞 اتصل بنا
 </a>
-</div>
 
-<br><br>
 
-<img src="./file_0000000001c471f48620004395d7a2ab.png" alt="Banner" style="display:block;width:100%;height:420px;object-fit:cover;border-radius:20px;">
+<img class="banner" src="./file_0000000001c471f48620004395d7a2ab.png" alt="Banner">
+
 
 </header>
 
+
 <section>
 
-<h2>🌹 نحوّل مشاعرك إلى هدايا لا تُنسى، باختيارات فاخرة تُخلّد أجمل اللحظات ✨🎁</h2>
+<h2>
+🌹 نحوّل مشاعرك إلى هدايا لا تُنسى، باختيارات فاخرة تُخلّد أجمل اللحظات ✨🎁
+</h2>
+
 
 <div class="cards">
 <div class="card">
 <img src="IMG-20260701-WA0001.jpg">
 <h3>باقة ليتل روز الفاخرة</h3>
 <p>تنسيق ورد فاخر بتصميم أنيق يناسب جميع المناسبات والهدايا.</p>
-
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
-
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0002.jpg">
 <h3>باقة الشغف الملكية</h3>
 <p>تنسيق ورد أنيق بتفاصيل راقية للهدايا والمناسبات.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0003.jpg">
 <h3>باقة الورد الساحر</h3>
 <p>تنسيق ورد فاخر للمناسبات والهدايا.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0005.jpg">
 <h3>باقة الأناقة الوردية</h3>
 <p>تنسيق ورد أنيق مناسب لجميع المناسبات.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0006.jpg">
 <h3>باقة الورد الملكية</h3>
 <p>تنسيق ورد فاخر بلمسة أنيقة للمناسبات والهدايا.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0007.jpg">
 <h3>باقة همسة ورد</h3>
 <p>تنسيق ورد فاخر بلمسة راقية للمناسبات والهدايا.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0008.jpg">
 <h3>باقة روز كلاسيك</h3>
 <p>باقة أنيقة بتصميم مميز تناسب جميع المناسبات.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0009.jpg">
 <h3>باقة الجمال الوردي</h3>
 <p>باقة فاخرة بتنسيق عصري ولمسات أنيقة.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0010.jpg">
 <h3>باقة الفخامة الناعمة</h3>
 <p>تنسيق ورد فاخر يناسب الهدايا والمناسبات الخاصة.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
-
 <div class="card">
 <img src="IMG-20260701-WA0011.jpg">
 <h3>باقة الورد الفاخر</h3>
 <p>باقة أنيقة بتصميم راقٍ ولمسات مميزة.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0012.jpg">
 <h3>باقة روز الرومانسية</h3>
 <p>تنسيق فاخر يضفي جمالًا على كل مناسبة.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0013.jpg">
 <h3>باقة لحظات السعادة</h3>
 <p>تنسيق ورد فاخر بتصميم أنيق يناسب جميع المناسبات.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
+
 <div class="card">
 <img src="IMG-20260701-WA0014.jpg">
 <h3>باقة الوردة البيضاء</h3>
 <p>باقة راقية بلمسات فاخرة لإهداء مميز.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0015.jpg">
 <h3>باقة الحب الأبدي</h3>
 <p>تصميم أنيق يجمع بين الفخامة وجمال الورد.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0016.jpg">
 <h3>باقة اللمسة الملكية</h3>
 <p>تنسيق ورد فاخر بلمسات أنيقة.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0017.jpg">
 <h3>صندوق ورد الأحلام</h3>
 <p>باقة مميزة تناسب جميع المناسبات.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0018.jpg">
 <h3>باقة الرقي والنعومة</h3>
 <p>تصميم فاخر بترتيب أنيق وجذاب.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
+
 
 <div class="card">
 <img src="IMG-20260701-WA0020.jpg">
 <h3>باقة أناقة ليتل روز</h3>
 <p>تنسيق ورد راقٍ لإهداء مميز.</p>
 <a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
+اطلب عبر الواتساب
 </a>
 </div>
 
-<div class="card">
-<img src="IMG-20260701-WA0021.jpg">
-<h3>باقة الفرحة المميزة</h3>
-<p>باقة فاخرة تناسب جميع الاحتفالات.</p>
-<a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
-</a>
-</div>
-
-<div class="card">
-<img src="IMG-20260701-WA0022.jpg">
-<h3>باقة الورد المميز</h3>
-<p>تنسيق أنيق يجمع بين الفخامة والجمال.</p>
-<a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
-</a>
-</div>
-
-<div class="card">
-<img src="IMG-20260701-WA0023.jpg">
-<h3>باقة الذوق الرفيع</h3>
-<p>باقة راقية بلمسة عصرية.</p>
-<a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
-</a>
-</div>
-
-<div class="card">
-<img src="IMG-20260701-WA0024.jpg">
-<h3>باقة البهجة الراقية</h3>
-<p>تنسيق ورد فاخر للمناسبات الخاصة.</p>
-<a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
-</a>
-</div>
-
-<div class="card">
-<img src="IMG-20260701-WA0025.jpg">
-<h3>باقة ليتل روز الملكية</h3>
-<p>تصميم فاخر يضفي لمسة مميزة على هديتك.</p>
-<a class="whatsapp-btn" href="https://wa.me/966503172022" target="_blank">
-    اطلب عبر الواتساب
-</a>
-</div>
-
-<div class="card">
-<h3>هدايا مميزة</h3>
-<p>اختيارات راقية من الهدايا والتنسيقات الفاخرة لتقديم لحظات لا تُنسى لمن تحب.</p>
-
-<a class="whatsapp-btn" href="https://wa.me/966503172022?text=السلام%20عليكم،%20أرغب%20بطلب%20هدية%20مميزة" target="_blank">
-    اطلب هديتك عبر الواتساب
-</a>
 
 </div>
-
 
 <br>
 
@@ -456,9 +372,11 @@ footer {
 
 </section>
 
+
 <footer>
 © Little Rose - ورد وهدايا
 </footer>
+
 
 </body>
 </html>
